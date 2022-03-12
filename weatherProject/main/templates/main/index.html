@@ -8,25 +8,23 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.5.3/cerulean/bootstrap.min.css"
     integrity="sha512-dQLT/B7byn2LjN/DN4zeBKpwGV6qbidV0XiMRWQOL7TGrV7FkZFldkGG+DGMU+CQnMTcRZlUI7GMWt1j6akNew=="
     crossorigin="anonymous" />
-  <title>Weather App </title>
+  <title>Global Weather App </title>
 </head>
 
 <body>
   <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
     <div class="container">
-      <a href="../" class="navbar-brand">Weather App <span style="color: rgb(39, 117, 161);"> <strong> - Django
-            Framework</strong>
+      <a href="../" class="navbar-brand"> 
         </span> </a>
-      <a href="https://openweathermap.org" class="navbar-tech">OpenWeather - Get Your API</a>
     </div>
   </div>
 
   <br /><br /> <br>
-  <div id="jumbotron" class="jumbotron" style="text-align: center; margin-top:-50px">
-    <h1 class="display-5">Weather Desktop App </h1>
-    <h5>Using Python Language and Django Framework</h5>
+  <div id="jumbotron" class="jumbotron" style="text-align: left; margin-top:-50px">
+    <h1 class="display-5">City Weather App </h1>
+    <h5></h5>
 
-    <img src="{% static 'images/weather.png' %}" class="image" style="width:100px; margin-bottom:-50px; ">
+    <img src="{% static 'images/forcast.png' %}" class="image" style="width:100px; margin-bottom:-50px; ">
   </div>
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -34,7 +32,7 @@
       {% csrf_token %}
       <div class=" input-group">
 
-      <input type="text" class="form-control" name="city" placeholder="Choose Your City ...">
+      <input type="text" class="form-control" name="city" placeholder="Enter a City from around the world ...">
       <div class="input-group-btn">
         <button type="submit" class="btn btn-primary">Search</button>
       </div>
