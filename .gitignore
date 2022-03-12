@@ -2,3 +2,4 @@ weatherProject/venv
 weatherProject/main/venv
 weatherProject/main/__pycache__
 weatherProject/weatherProject/__pycache__
+weatherProject/main/migrations/__pycache__
